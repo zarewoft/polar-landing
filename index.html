@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+            color: rgba(60, 60, 67, 0.6);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 18px;
+        }
+        nav.intersection-support {
+            position: fixed;
+            width: 100%;
+        }
+        nav > .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            color: white;
+        }
+        nav a {
+            color:white;
+        }
+        nav a:visited {
+            color:white;
+        }
+        nav > .right-nav {
+            font-size: 14px;
+        }
+        .left-nav, .right-nav {
+            padding: 0 12px;
+        }
+        .right-nav > * {
+            padding: 0 12px;
+        }
+        .header-bg {
+            background: linear-gradient(158deg,rgba(12, 103, 178, 0.4), rgba(192, 220, 253 , 0.3) 60%),linear-gradient(232deg, rgba(36, 213, 200, 0.3), rgba(234, 242, 248, 0.4) 65%),linear-gradient(41deg, rgba(6, 71, 149 , 0.3), rgba(136, 171, 213, 0.3) 50%);
+        }
+        header .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        header .container.intersection-support {
+            padding-top: 60px;
+        }
+        header .title {
+            width: 400px;
+            color: white;
+            padding: 0 12px;
+        }
+        header .image {
+            height: 500px;
+            border-radius: 8px;
+        }
+        #feature {
+            background: white;
+        }
+        #feature > .container > div {
+            height: 350px;
+            display: flex;
+            align-items: center;
+        }
+        #feature > .container > div > div {
+            flex: 1;
+        }
+        .description {
+            padding: 20px 40px;
+        }
+
+        #any-device > .images {
+            position: relative;
+        }
+        #ipad-screenshot {
+            height: 300px;
+        }
+        #iphone-screenshot {
+            height: 240px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        #simple > .images {
+            text-align: end;
+        }
+        .transform-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 30px;
+            margin-right: 30px;
+        }
+        #member-blank {
+            height: 300px;
+            transform: rotate3d(1, 1, -0.3, 44deg)
+        }
+        #member-supplementary {
+            left: 112px;
+            top: 4px;
+        }
+        #member-secondary {
+            right: 4px;
+            top: 4px;
+        }
+        #member-supplementary, #member-secondary {
+            position: absolute;
+            height: 292px;
+            box-shadow: 0px 0px 71px -19px rgb(0 0 0 / 30%);
+            transform: rotate3d(1, 1, -0.3, 44deg) translateZ(20px);
+        }
+
+        #social-network > .images {
+            display: flex;
+            justify-content: center;
+        }
+        #social-network > .images > * {
+            padding: 0 8px;
+        }
+
+        #api > .images {
+            display: flex;
+            justify-content: center;
+        }
+
+        #pricing {
+            background: linear-gradient(200deg, rgb(255, 95, 151), rgba(255, 0, 0, 0) 70%), linear-gradient(127deg, rgb(255, 251, 246), rgba(255, 198, 128, 0.2) 70%), linear-gradient(0deg, rgb(255, 167, 128), rgba(0, 0, 255, 0) 70%);
+            color: white;
+        }
+        #pricing > .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 380px;
+        }
+
+        #join-community {
+            background: white;
+        }
+        #join-community > .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 380px;
+        }
+
+        footer {
+            background: white;
+            font-size: 10px;
+        }
+        footer > .container {
+            padding: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-top: 1px solid rgb(185, 185, 187);
+        }
+        footer a, footer a:visited {
+            color: rgba(60, 60, 67, 0.6);
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a.filled-button {
+            color: rgba(12, 103, 178, 0.4);
+            background: white;
+            border-radius: 24px;
+            padding: 6px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        a.filled-button:visited {
+            color: rgba(12, 103, 178, 0.4);
+        }
+        a.outlined-button {
+            border-radius: 24px;
+            border: 1px solid white;
+            padding: 6px 16px;
+            color: white;
+            font-size: 14px;
+        }
+        a.outlined-button:visited {
+            color: white;
+        }
+        a.filled-button.orange-button {
+            background: rgb(255, 167, 128);
+            color: white;
+        }
+        a.filled-button.orange-button:visited {
+            color: white;
+        }
+        .outlined {
+            border: 1px solid white;
+            padding: 16px 16px;
+            border-radius: 8px;
+        }
+        span.coming-soon {
+            font-size: 10px;
+            border: 1px solid rgb(255, 95, 151);
+            border-radius: 8px;
+            padding: 2px 4px;
+            color: rgb(255, 95, 151);
+            position: absolute;
+            top: 0;
+        }
+        h1 {
+            position: relative;
+        }
+        .align-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bg">
+        <nav>
+            <div class="container">
+                <div class="left-nav">
+                    <h1>Polar</h1>
+                </div>
+                <div class="right-nav">
+                    <a href="#feature">ฟีเจอร์</a>
+                    <a href="#pricing">ราคา</a>
+                    <a class="filled-button" href="https://clinic.zarewoft.com/register">สมัครสมาชิก</a>
+                    <a class="outlined-button" href="https://clinic.zarewoft.com/login">เข้าสู่ระบบ</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="container">
+                <div class="title">
+                    <h1>โปรแกรมบริหารคลินิคที่คุณตามหา</h1>
+                    <a href="https://clinic.zarewoft.com/register" class="filled-button">ทดลองใช้งาน</a>
+                </div>
+                <img class="image" src="./assets/member_screenshot.png" alt="หน้าต่างข้อมูลคนไข้" srcset="">
+            </div>
+        </header>
+    </div>
+    <section id="feature">
+        <div class="container">
+            <div id="simple">
+                <div class="images">
+                    <div class="transform-container">
+                        <img id="member-blank" src="./assets/member_blank.png" alt="" srcset="">
+                        <img id="member-supplementary" src="./assets/member_supplymentary.png" alt="" srcset="">
+                        <img id="member-secondary" src="./assets/member_secondary.png" alt="" srcset="">    
+                    </div>
+                </div>
+                <div class="description">
+                    <h1>บอกลาความยุ่งยาก</h1>
+                    <p>ด้วยหน้าตาโปรแกรมที่ถูกออกแบบโดยคิดถึงผู้ใช้เป็นหลัก ทำให้สามารถเรียนรู้การใช้งานได้เองในเวลาไม่กี่นาที</p>
+                </div>
+            </div>
+            <div id="any-device">
+                <div class="description">
+                    <h1>ใช้งานได้บนทุกอุปกรณ์</h1>
+                    <p>เพียงแค่มีเว็บเบราว์เซอร์ก็สามารถใช้งานได้ ไม่จำเป็นต้องติดตั้งโปรแกรม หมดห่วงเรื่องข้อมูลหาย</p>
+                </div>
+                <div class="images">
+                    <img id="ipad-screenshot" src="./assets/ipadpro11_spacegrey_landscape.png" alt="" srcset="">
+                    <img id="iphone-screenshot" src="./assets/iPhone 6_7_8 Plus.png" alt="" srcset="">
+                </div>
+            </div>
+            <div id="social-network">
+                <div class="images">
+                    <img id="line-logo" src="./assets/LINE_SOCIAL_Circle.png" height="80">
+                    <img id="f-logo" src="./assets/f_logo_RGB-Blue_144.png" height="80">
+                </div>
+                <div class="description">
+                    <h1>เชื่อมต่อกับโซเชียลเน็ตเวิร์ค<span class="coming-soon">coming soon</span></h1>
+                    <p>เข้าถึงลูกค้าได้มากกว่าเดิม ด้วยการเชื่อมต่อกับโซเชียล เพื่อแจ้งเตือนลูกค้าหรือส่งข้อความประชาสัมพันธ์</p>
+                </div>
+            </div>
+            <div id="api">
+                <div class="description">
+                    <h1>API enable<span class="coming-soon">coming soon</span></h1>
+                    <p>สำหรับผู้ใช้งานขั้นสูงที่ต้องการเชื่อมต่อกับระบบอื่น รองรับทั้งการสั่งงานและเรียกดูข้อมูล</p>
+                </div>
+                <div class="images">
+                    <img id="api-logo" src="./assets/api.png" width="120">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="container">
+            <h1>จ่ายตามการใช้งานจริง</h1>
+            <p class="align-center">หมดห่วงเรื่องค่าใช้งานจากแพคเกจที่สูงเกินจริง ด้วยการคิดค่าใช้บริการตามปริมาณการใช้งานจริง</p>
+            <p class="outlined">ราคาและวิธีการคำนวนค่าใช้งานจะประกาศในอนาคต</p>
+        </div>
+    </section>
+    <section id="join-community">
+        <div class="container">
+            <h1>เสียงของท่านมีความหมาย</h1>
+            <p class="align-center">เราต้องการรับฟังความเห็นจากผู้ใช้ทุกท่านเพื่อการพัฒนาโปรแกรมที่ตอบโจทย์ลูกค้าที่ดีที่สุด</p>
+            <a class="filled-button orange-button" href="#">เข้าร่วมกลุ่มพูดคุยของผู้ใช้งาน Polar</a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="left-nav">
+                <span>Polar สร้างขึ้นโดย <a href="https://www.zarewoft.com">Zarewoft(Thailand) Company Limited</a></span>
+            </div>
+            <div class="right-nav">
+                <a href="#">เข้าร่วมชุมชนผู้ใช้ Polar</a>
+                <a href="https://www.vecteezy.com/free-vector/web">Web Vectors by Vecteezy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
