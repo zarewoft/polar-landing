@@ -66,7 +66,6 @@
             padding-top: 60px;
         }
         header .title {
-            width: 400px;
             color: white;
             padding: 0 12px;
         }
@@ -227,8 +226,6 @@
             border-radius: 8px;
             padding: 2px 4px;
             color: rgb(255, 95, 151);
-            position: absolute;
-            top: 0;
         }
         h1 {
             position: relative;
@@ -237,29 +234,7 @@
             text-align: center;
         }
 
-        @media screen and (min-width: 992px) {
-            .menu-button {
-                display: none;
-            }
-        }
         @media screen and (max-width: 992px) {
-            .menu-group {
-                top: -250px;
-                position: absolute;
-                right: 0;
-                left: 0;
-                transition: all 0.5s ease-out;
-                z-index: 100;
-                backdrop-filter: blur(2px);
-                background: linear-gradient(158deg,rgba(12, 103, 178, 0.4), rgba(192, 220, 253 , 0.3) 60%),linear-gradient(232deg, rgba(36, 213, 200, 0.3), rgba(234, 242, 248, 0.4) 65%),linear-gradient(41deg, rgba(6, 71, 149 , 0.3), rgba(136, 171, 213, 0.3) 50%);
-            }
-            .menu-container:hover > .menu-group {
-                top: 0;
-            }
-            .menu-item {
-                display: block;
-                margin: 18px 12px;
-            }
 
             header .container {
                 flex-direction: column-reverse;
@@ -277,6 +252,62 @@
 
             #feature > .container > #any-device, #feature > .container > #api {
                 flex-direction: column-reverse;
+            }
+        }
+        @media screen and (min-width: 576px) {
+            .menu-button {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            html, body {
+                scroll-snap-type: y mandatory;
+            }
+            .menu-group {
+                top: -250px;
+                position: absolute;
+                right: 0;
+                left: 0;
+                transition: all 0.5s ease-out;
+                z-index: 100;
+                backdrop-filter: blur(2px);
+                background: linear-gradient(158deg,rgba(12, 103, 178, 0.4), rgba(192, 220, 253 , 0.3) 60%),linear-gradient(232deg, rgba(36, 213, 200, 0.3), rgba(234, 242, 248, 0.4) 65%),linear-gradient(41deg, rgba(6, 71, 149 , 0.3), rgba(136, 171, 213, 0.3) 50%);
+            }
+            .menu-container:hover > .menu-group {
+                top: 0;
+            }
+            .menu-item {
+                display: block;
+                margin: 18px 12px;
+            }
+            header .image {
+                height: 200px;
+            }
+
+            div.header-bg, section#join-community {
+                scroll-snap-align: start;
+            }
+            section#pricing, section#feature > .container > div {
+                scroll-snap-align: center;
+            }
+
+            #ipad-screenshot {
+                height: 200px;
+            }
+            #iphone-screenshot {
+                height: 180px;
+            }
+            #member-blank {
+                height: 200px;
+            }
+            #member-supplementary, #member-secondary {
+                height: 180px;
+            }
+            #member-supplementary {
+                left: 78px;
+            }
+            #member-secondary {
+                right: 18px;
             }
         }
     </style>
