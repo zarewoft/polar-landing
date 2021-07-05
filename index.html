@@ -35,6 +35,7 @@
             align-items: center;
             height: 48px;
             color: white;
+            position: relative;
         }
         nav a {
             color:white;
@@ -48,7 +49,8 @@
         .left-nav, .right-nav {
             padding: 0 12px;
         }
-        .right-nav > * {
+                
+        .menu-item {
             padding: 0 12px;
         }
         .header-bg {
@@ -131,6 +133,7 @@
         #social-network > .images {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
         #social-network > .images > * {
             padding: 0 8px;
@@ -139,6 +142,7 @@
         #api > .images {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         #pricing {
@@ -232,6 +236,49 @@
         .align-center {
             text-align: center;
         }
+
+        @media screen and (min-width: 992px) {
+            .menu-button {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .menu-group {
+                top: -250px;
+                position: absolute;
+                right: 0;
+                left: 0;
+                transition: all 0.5s ease-out;
+                z-index: 100;
+                backdrop-filter: blur(2px);
+                background: linear-gradient(158deg,rgba(12, 103, 178, 0.4), rgba(192, 220, 253 , 0.3) 60%),linear-gradient(232deg, rgba(36, 213, 200, 0.3), rgba(234, 242, 248, 0.4) 65%),linear-gradient(41deg, rgba(6, 71, 149 , 0.3), rgba(136, 171, 213, 0.3) 50%);
+            }
+            .menu-container:hover > .menu-group {
+                top: 0;
+            }
+            .menu-item {
+                display: block;
+                margin: 18px 12px;
+            }
+
+            header .container {
+                flex-direction: column-reverse;
+                gap: 12px;
+            }
+
+            header .image {
+                height: 300px;
+            }
+
+            #feature > .container > div {
+                flex-direction: column;
+                height: 600px;
+            }
+
+            #feature > .container > #any-device, #feature > .container > #api {
+                flex-direction: column-reverse;
+            }
+        }
     </style>
 </head>
 <body>
@@ -242,10 +289,15 @@
                     <img src="./assets/polary_logo.svg" height="30"/>
                 </div>
                 <div class="right-nav">
-                    <a href="#feature">ฟีเจอร์</a>
-                    <a href="#pricing">ราคา</a>
-                    <a class="filled-button" href="https://clinic.polary.app/register">สมัครสมาชิก</a>
-                    <a class="outlined-button" href="https://clinic.polary.app/login">เข้าสู่ระบบ</a>
+                    <div class="menu-container">
+                        <img class="menu-button" src="./assets/menu_white_24dp.svg"/>
+                        <div class="menu-group">
+                            <a class="menu-item" href="#feature">ฟีเจอร์</a>
+                            <a class="menu-item" href="#pricing">ราคา</a>
+                            <a class="menu-item filled-button" href="https://clinic.polary.app/register">สมัครสมาชิก</a>
+                            <a class="menu-item outlined-button" href="https://clinic.polary.app/login">เข้าสู่ระบบ</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -322,7 +374,7 @@
     <footer>
         <div class="container">
             <div class="left-nav">
-                <span>Polary สร้างขึ้นโดย <a href="https://www.zarewoft.com">Zarewoft(Thailand) Company Limited</a></span>
+                <a href="https://www.zarewoft.com">Zarewoft(Thailand) Company Limited</a>
             </div>
             <div class="right-nav">
                 <a href="https://fb.me/app.polary" target="_blank"><img src="./assets/f_logo_RGB-Blue_144.png" height="20"/></a>
