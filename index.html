@@ -43,9 +43,7 @@
         nav a:visited {
             color:white;
         }
-        nav > .right-nav {
-            font-size: 14px;
-        }
+
         .left-nav, .right-nav {
             padding: 0 12px;
         }
@@ -60,7 +58,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 600px;
+            padding: 28px 10px
         }
         header .container.intersection-support {
             padding-top: 60px;
@@ -77,15 +75,15 @@
             background: white;
         }
         #feature > .container > div {
-            height: 350px;
             display: flex;
             align-items: center;
+            padding: 40px 0;
         }
         #feature > .container > div > div {
             flex: 1;
         }
         .description {
-            padding: 20px 40px;
+            padding: 20px 10px;
         }
 
         #any-device > .images {
@@ -153,7 +151,7 @@
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            height: 380px;
+            padding: 60px 18px;
         }
 
         #join-community {
@@ -164,7 +162,10 @@
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            height: 380px;
+            padding: 40px 18px;
+        }
+        #join-community a {
+            margin: 8px;
         }
 
         footer {
@@ -193,7 +194,6 @@
             padding: 6px 16px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 14px;
         }
         a.filled-button:visited {
             color: rgba(12, 103, 178, 0.4);
@@ -203,7 +203,6 @@
             border: 1px solid white;
             padding: 6px 16px;
             color: white;
-            font-size: 14px;
         }
         a.outlined-button:visited {
             color: white;
@@ -215,13 +214,20 @@
         a.filled-button.orange-button:visited {
             color: white;
         }
+        a.filled-button.fb-button {
+            background: #1877f2;
+            color: white;
+        }
+        a.filled-button.fb-button:visited {
+            color: white;
+        }
         .outlined {
             border: 1px solid white;
             padding: 16px 16px;
             border-radius: 8px;
         }
         span.coming-soon {
-            font-size: 10px;
+            font-size: 12px;
             border: 1px solid rgb(255, 95, 151);
             border-radius: 8px;
             padding: 2px 4px;
@@ -247,7 +253,7 @@
 
             #feature > .container > div {
                 flex-direction: column;
-                height: 600px;
+                height: 500px;
             }
 
             #feature > .container > #any-device, #feature > .container > #api {
@@ -282,6 +288,13 @@
             }
             header .image {
                 height: 200px;
+            }
+            header .container {
+                height: 500px;
+            }
+
+            .description {
+                padding: 20px 20px;
             }
 
             div.header-bg, section#join-community {
@@ -398,8 +411,9 @@
     <section id="join-community">
         <div class="container">
             <h1>เสียงของท่านมีความหมาย</h1>
-            <p class="align-center">เราต้องการรับฟังความเห็นจากผู้ใช้ทุกท่านเพื่อการพัฒนาโปรแกรมที่ตอบโจทย์ลูกค้าที่ดีที่สุด</p>
-            <a class="filled-button orange-button" href="#">เข้าร่วมกลุ่มพูดคุยของผู้ใช้งาน Polary</a>
+            <p class="align-center">เราต้องการรับฟังความเห็นจากผู้ใช้ทุกท่านเพื่อการพัฒนาโปรแกรมที่ตอบโจทย์ลูกค้าที่ดีที่สุด หากมีข้อแนะนำติชมสามารถส่งข้อความหาเราโดยตรงได้ผ่านช่องทางด้านล่าง</p>
+            <a class="filled-button fb-button" href="https://fb.me/app.polary" target="_blank"><img src="./assets/f_logo_RGB-Blue_144.png" height="20"/>Polary Facebook Page</a>
+            <a class="filled-button orange-button" href="mailto:contact@polary.app">contact@polary.app</a>
         </div>
     </section>
     <footer>
@@ -408,8 +422,6 @@
                 <a href="https://www.zarewoft.com">Zarewoft(Thailand) Company Limited</a>
             </div>
             <div class="right-nav">
-                <a href="https://fb.me/app.polary" target="_blank"><img src="./assets/f_logo_RGB-Blue_144.png" height="20"/></a>
-                <a href="#">เข้าร่วมชุมชนผู้ใช้ Polary</a>
                 <a href="https://www.vecteezy.com/free-vector/web">Web Vectors by Vecteezy</a>
             </div>
         </div>
