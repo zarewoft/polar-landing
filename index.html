@@ -10,21 +10,31 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Polary</title>
-  <script async type="module" crossorigin src="/assets/index.184da467.js"></script>
+  <script async type="module" crossorigin src="/assets/index.f325381e.js"></script>
   <link rel="modulepreload" href="/assets/vendor.7840f905.js">
-  <link rel="stylesheet" href="/assets/index.bbbf616d.css">
+  <link rel="stylesheet" href="/assets/index.76ecf702.css">
 </head>
 
 <body>
-  <nav class="sticky top-0 z-50 ">
+  <nav class="sticky top-0 z-50" style="background-color: #1BD1D5;">
     <div class="polary-container flex justify-between md:h-[60px] h-11 container-padding">
       <img src="/assets/polary_logo.d382e075.svg" alt="Polary logo" class="py-3">
-      <div class="flow space-x-12 text-white text-lg font-medium self-center">
-        <a href="#feature">คุณสมบัติ</a>
-        <a href="#price">ราคา</a>
-        <a href="#contact">ติดต่อ</a>
+      <div class="flex md:space-x-12 space-x-5 text-white button-text self-center items-center">
+        <a href="#feature" class="md:inline hidden">คุณสมบัติ</a>
+        <a href="#price" class="md:inline hidden">ราคา</a>
+        <a href="#contact" class="md:inline hidden">ติดต่อ</a>
         <a href="#login">เข้าสู่ระบบ</a>
         <a href="#register" class="button round white filled slim">ลงทะเบียน</a>
+        <div class="group md:hidden">
+          <img id="menu-button" src="/assets/menu_button.445f4bbb.svg" alt="menu button" role="button" class="px-2  h-4 sm:h-auto">
+          <div id="main-menu" role="menu" class="fixed flex-col items-center bg-gradient-dark-green h2 w-full sm:w-[448px] top-11 py-7 right-0 bottom-0 bg-opacity-90 backdrop-blur-md overflow-y-auto">
+            <a href="#feature" class="py-12 self-stretch text-center">คุณสมบัติ</a>
+            <div class="h-px bg-white bg-opacity-40 w-14 shrink-0"></div>
+            <a href="#price" class="py-12  self-stretch text-center">ราคา</a>
+            <div class="h-px bg-white bg-opacity-40 w-14 shrink-0"></div>
+            <a href="#contact" class="py-12  self-stretch text-center">ติดต่อ</a>  
+          </div>
+        </div>
       </div>
     </div>
   </nav>
