@@ -1,348 +1,767 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+      defer
+    ></script>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polary</title>
+    <script async type="module" crossorigin src="/assets/index.975209f9.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.fb4ad5c4.js">
+    <link rel="stylesheet" href="/assets/index.6ab76999.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Polary</title>
-  <script async type="module" crossorigin src="/assets/index.f325381e.js"></script>
-  <link rel="modulepreload" href="/assets/vendor.7840f905.js">
-  <link rel="stylesheet" href="/assets/index.76ecf702.css">
-</head>
-
-<body>
-  <nav class="sticky top-0 z-50" style="background-color: #1BD1D5;">
-    <div class="polary-container flex justify-between md:h-[60px] h-11 container-padding">
-      <img src="/assets/polary_logo.d382e075.svg" alt="Polary logo" class="py-3">
-      <div class="flex md:space-x-12 space-x-5 text-white button-text self-center items-center">
-        <a href="#feature" class="md:inline hidden">คุณสมบัติ</a>
-        <a href="#price" class="md:inline hidden">ราคา</a>
-        <a href="#contact" class="md:inline hidden">ติดต่อ</a>
-        <a href="#login">เข้าสู่ระบบ</a>
-        <a href="#register" class="button round white filled slim">ลงทะเบียน</a>
-        <div class="group md:hidden">
-          <img id="menu-button" src="/assets/menu_button.445f4bbb.svg" alt="menu button" role="button" class="px-2  h-4 sm:h-auto">
-          <div id="main-menu" role="menu" class="fixed flex-col items-center bg-gradient-dark-green h2 w-full sm:w-[448px] top-11 py-7 right-0 bottom-0 bg-opacity-90 backdrop-blur-md overflow-y-auto">
-            <a href="#feature" class="py-12 self-stretch text-center">คุณสมบัติ</a>
-            <div class="h-px bg-white bg-opacity-40 w-14 shrink-0"></div>
-            <a href="#price" class="py-12  self-stretch text-center">ราคา</a>
-            <div class="h-px bg-white bg-opacity-40 w-14 shrink-0"></div>
-            <a href="#contact" class="py-12  self-stretch text-center">ติดต่อ</a>  
+  <body>
+    <nav class="sticky top-0 z-50" style="background-color: #1bd1d5">
+      <div
+        class="polary-container container-padding flex h-11 justify-between md:h-[60px]"
+      >
+        <img src="/assets/polary_logo.d382e075.svg" alt="Polary logo" class="py-3" />
+        <div
+          class="button-text flex items-center space-x-5 self-center text-white md:space-x-12"
+        >
+          <a href="#feature" class="hidden md:inline">คุณสมบัติ</a>
+          <a href="#price" class="hidden md:inline">ราคา</a>
+          <a href="#contact" class="hidden md:inline">ติดต่อ</a>
+          <a href="https://clinic.polary.app/login">เข้าสู่ระบบ</a>
+          <a
+            href="https://clinic.polary.app/register"
+            class="button round white filled slim"
+            >ลงทะเบียน</a
+          >
+          <div class="md:hidden">
+            <img
+              id="menu-button"
+              src="/assets/menu_button.445f4bbb.svg"
+              alt="menu button"
+              role="button"
+              class="h-4 px-2 sm:h-auto"
+            />
+            <div
+              id="main-menu"
+              role="menu"
+              class="h2 fixed top-11 right-0 bottom-0 w-full flex-col items-center overflow-y-auto bg-gradient-dark-green bg-opacity-90 py-7 backdrop-blur-md sm:w-[448px]"
+            >
+              <a href="#feature" class="self-stretch py-12 text-center"
+                >คุณสมบัติ</a
+              >
+              <div class="h-px w-14 shrink-0 bg-white bg-opacity-40"></div>
+              <a href="#price" class="self-stretch py-12 text-center">ราคา</a>
+              <div class="h-px w-14 shrink-0 bg-white bg-opacity-40"></div>
+              <a href="#contact" class="self-stretch py-12 text-center"
+                >ติดต่อ</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <div class="bg-primary pt-[60px] pb-16 overflow-clip -mt-[60px]">
-    <div class="polary-container relative md:pt-[130px] pt-5">
-      <svg class="absolute right-0 bottom-0 w-1/2 aspect-square" viewBox="0 0 570 570" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle opacity="0.500046" cx="285" cy="285" r="285" fill="#11C1C4" />
-      </svg>
-      <svg class="absolute -left-1/3 -top-1/3 z-0 w-1/2  aspect-square" width="570" height="570" viewBox="0 0 570 570" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <circle opacity="0.500046" cx="285" cy="285" r="285" fill="#11C1C4" />
-      </svg>
-      <div class="md:w-2/3 xl:w-1/2 relative container-padding">
-        <h1 class="h1 text-white">ระบบบริหารจัดการคลีนิค<br>ที่ครบครันและสะดวกสบาย</h1>
-        <p class="text-white h4 mt-5 mb-5 xl:mt-4 xl:mb-8 w-1/2 text-opacity-[0.85]">Polary
-          คือระบบบริหารจัดการคลีนิคแบบครบวงจรที่ครอบคลุมทุกการใช้งาน
-          เพือให้คลีนิคสามารถบริหารและส่งมอบบริการได้อย่างมีประสิทธิภาพโดยไม่กังวลถึงระบบการทำงานด้านหลัง</p>
-        <a href="#" class="button round filled white">ทดลองใช้ฟรี</a>
-        <a href="#statistic">
-          <img src="/assets/down_icon.dfb3b14c.svg" alt="" class="w-10 h-10 mt-14 mb-3 xl:mt-24 xl:mb-5 animate-bounce">
-          <span class="inline-block text-white text-opacity-60 primary-text">เลื่อนลงเพื่อดูรายละเอียด</span>
-        </a>
-      </div>
-
-      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_3bctaz0q.json" mode="bounce"
-        background="transparent" speed="1" loop autoplay class="md:h-full md:w-2/3 xl:w-1/2 w-3/4 absolute -right-20 -bottom-40">
-      </lottie-player>
-    </div>
-  </div>
-  <div class="xl:py-[105px] py-10 overflow-clip" id="statistic">
-    <div class="polary-container relative">
-      <div class="flex flex-col xl:flex-row px-3 space-y-7 xl:space-x-7 xl:space-y-0 relative">
-        <div class="flex flex-col sm:flex-row sm:overflow-x-auto sm:p-6 sm:space-x-7 xl:p-0 xl:overflow-x-visible">
-          <div class="group flex-shrink-0">
-            <div class="relative h-24 flex justify-center">
-              <img src="/assets/Mascot l Polary.c936ba19.svg" class="absolute w-40 top-7 transition-all group-hover:top-0">
-            </div>
-            <div class="rounded-xl card px-8 py-5 z-10 bg-white relative">
-              <div class="relative inline-flex rounded-full h-4 w-4 bg-[#70FF00] float-right">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#70FF00] opacity-75"></span>
-              </div>
-              <h1 class="h1 my-6 md:my-10">2,800+</h1>
-              <h3 class="h3 text-primary mb-2">
-                จำนวนคนไข้และลูกค้าที่ดูแลทั้งหมดในระบบ
-              </h3>
-              <p class="primary-text text-card-gray">ปัจจุบัน Polary ได้รองรับคนไข้และลูกค้าสูงถึง 2,800 คน</p>
-            </div>
-          </div>
-          <div class="group flex-shrink-0">
-            <div class="relative h-24 flex justify-center">
-              <img src="/assets/Mascot l Polary.c936ba19.svg" class="absolute w-40 top-7 transition-all group-hover:top-0">
-            </div>
-            <div class="rounded-xl card px-8 py-5 z-10 bg-white relative">
-              <div class="relative inline-flex rounded-full h-4 w-4 bg-[#70FF00] float-right">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#70FF00] opacity-75"></span>
-              </div>
-              <h1 class="h1 my-6 md:my-10">32+</h1>
-              <h3 class="h3 text-primary mb-2">จำนวนคลีนิคที่ใช้บริการ Polary</h3>
-              <p class="primary-text text-card-gray">ปัจจุบันบริการ Polary ได้รองรับคลีนิกจำนวน 32 แห่ง
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w-[210px] h-[260px] self-end  overflow-clip relative z-10">
-          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_wplhmbxf.json" background="transparent"
-            speed="1" class="w-[260px] h-[260px] absolute -left-5 bg-white xl:bg-transparent" loop autoplay></lottie-player>
-        </div>
-        <div class="absolute bottom-[19px] left-0 xl:left-1/3 h-[4px] w-full xl:w-[500px] bg-black"></div>
-        <svg class="absolute bottom-[18px] right-8 hidden xl:block" width=" 118" height="6" viewBox="0 0 118 6" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3H115" stroke="url(#paint0_linear_164_728)" stroke-width="4.2" stroke-linecap="square" />
-          <defs>
-            <linearGradient id="paint0_linear_164_728" x1="9" y1="3" x2="117" y2="3" gradientUnits="userSpaceOnUse">
-              <stop />
-              <stop offset="1" stop-opacity="0" />
-            </linearGradient>
-          </defs>
+    </nav>
+    <div class="-mt-[60px] overflow-clip bg-primary pt-[60px] pb-16">
+      <div class="polary-container relative pt-5 md:pt-[130px]">
+        <svg
+          class="absolute right-0 bottom-0 aspect-square w-1/2"
+          viewBox="0 0 570 570"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle opacity="0.500046" cx="285" cy="285" r="285" fill="#11C1C4" />
         </svg>
-      </div>
-      <div class="w-80 h-80 rounded-full bg-[#1BD1D51A] absolute -bottom-3/4 right-10 blur-[100px]"></div>
-    </div>
-  </div>
-  <div class="section bg-section-gray xl:mb-12 mb-4" id="feature">
-    <div class="polary-container overflow-clip">
-      <div class="feature split vertical">
-        <div class="detail left">
-          <h2 class="h2 mb-4 xl:mb-9 text-text-black w-3/5 sm:w-2/5 xl:w-auto">ข้อมูลคนไข้และลูกค้าถูกเก็บอย่างปลอดภัย</h2>
-          <p class="h5 text-dark-gray w-4/5 xl:w-auto">ข้อมูลรายละเอียดลูกค้าและคนไข้ทั้งหมด อาทิ
-            ประวัติส่วนบุคคล
-            ประวัติการรักษา
-            ประวัติการจ่ายยา
-            ถูกเก็บอย่างปลอดภัยบน ระบบ ออนไลน์ของ Polary
-            โดยที่คลีนิคสามารถเรียกดูและจัดการข้อมูลทั้งหมดนี้ได้ทุกที่ทุกเวลา</p>
-        </div>
-        <div class="relative aspect-video w-full sm:mt-6 xl:mt-0 xl:h-auto xl:w-auto md:max-h-[456px] xl:max-h-auto">
-          <img src="/assets/Screenshot1.75b243a4.png" alt="" srcset="" class="absolute -right-12 bottom-0 xl:static max-h-full">
-          <img class="absolute top-1/2 -translate-y-1/2 left-6 lg:left-auto lg:right-1/3 xl:-left-20 h-2/3" srcset="/assets/member-card.4215073a.png , /assets/member-card@2x.1258ae9e.png 2x" src="/assets/member-card@2x.1258ae9e.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section bg-section-gray xl:mb-12 mb-4">
-    <div class="polary-container overflow-clip">
-      <div class="feature flex flex-col xl:flex-row">
-        <div class="relative aspect-video w-full mb-6 xl:mb-0 xl:h-auto xl:w-auto md:max-h-[456px] xl:max-h-auto">
-          <img src="/assets/Screenshot2.6e6b36b0.png" alt="" srcset="" class="absolute max-h-full -left-8 xl:right-16 xl:top-0 xl:static">
-          <img class="absolute xl:top-[72%] top-2/3 h-1/6 left-[40%] xl:h-16 -translate-y-1/4 xl:-translate-y-1/2 xl:left-1/2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAY8AAABfCAYAAAAQ00t8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIvSURBVHgB7dg9bhNBGMfhmTFEiMolkpu0qRKfgOQmvoGv4ivkJCQn2CCFmm0iUaaAgoh42OVDokCx//3zSLszeucAP83U8sdyGJZvX73Z1t4vy/wBwG93pbTdw/nZ9d9BnX/vhuF00U4+TNvTAgD/Nz7vn66+rNfjr3isPn76XIQDgMPGb/un9WI13G9KrZsCAIctX9f6vZVWtwUAjlTr4n2b1osCAMfq/bIVAAiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDExAOAmHgAEBMPAGLiAUBMPACIiQcAMfEAICYeAMTEA4CYeAAQEw8AYuIBQEw8AIiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDExAOAmHgAEBMPAGLiAUBMPACIiQcAMfEAICYeAMTEA4CYeAAQEw8AYuIBQEw8AIiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDExAOAmHgAEBMPAGLiAUBMPACIiQcAMfEAICYeAMTEA4CYeAAQEw8AYuIBQEw8AIiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDEWun1pgDAkXopd63359sCAEeqpe3aSfmxmyoyFgA4YO7Fw/nZdRvX68f9vl0JCAAvmTsx92Le138PVsP9ZppsS60XBQBmvd/U3m+/Ti9Vj9OFYx79BAVyR6iPwqycAAAAAElFTkSuQmCC"
-          alt="">
-          <img class="absolute top-1/3 h-1/6 left-1/3 xl:h-16 -translate-y-1/2" src="/assets/appointment_card2.a4df273a.png" alt="">
-          <img class="absolute top-2/3 h-1/6 left-[28%] xl:h-16 -translate-y-1/2 xl:left-1/3" src="/assets/appointment_card.a6c35da1.png" alt="">
-        </div>
-        <div class="xl:pt-5 xl:w-1/3 xl:mb-0 w-full mb-6 right sm:pb-12 sm:w-4/5 self-end">
-          <h2 class="h2 mb-4 xl:mb-9 text-text-black w-3/5 xl:w-auto">บริหารจัดการเวลาโดยละเอียด อย่างง่ายดาย</h2>
-          <p class="h5 text-dark-gray pr-8 xl:pr-0">Polary
-            รองรับการบริหารจัดการเวลาและตารางเพื่อให้คลีนิคของคุณสามารถปฏิบัติงานได้อย่างมีประสิทธิภาพสูงสุด
-            การจัดการตารางเวลารองรับในรูปแบบที่ง่ายดาย เช่น ปฏิทิน ตารางรายวัน ตารางรายเดือน
-            อีกทั้งสามารถรองรับรูปแบบตาราง เวลาของแต่บุคคล</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section bg-section-gray xl:mb-12 mb-4">
-    <div class="polary-container">
-      <div class="feature split horizontal">
-        <div class="detail text-center">
-          <h2 class="h2 mb-4 xl:mb-9 text-text-black">วิเคราะห์ข้อมูลและนำเสนอรายงาน</h2>
-          <p class="h5 text-dark-gray">ข้อมูลทั้งหมดสามารถวิเคราะห์และนำเสนอในรูปแบบรายงานหรือแผนภูมิ</p>
-        </div>
-      </div>
-      <div class="flex overflow-x-auto lg:justify-center mt-6">
-        <div class="sm:min-w-1/3 min-w-36 shrink-0 h-40 sm:h-80 relative flex justify-center flex-grow lg:flex-grow-0">
-          <img src="/assets/half_mobile_screen.284195c6.png" class="h-full w-auto mx-auto" alt=""
-            srcset="/assets/half_mobile_screen.284195c6.png , /assets/half_mobile_screen@2x.3c22cf04.png 2x">
-          <img src="/assets/graph.79706ce2.png" class="absolute bottom-[12.5%] h-[45%]" alt="graph"
-            srcset="/assets/graph.79706ce2.png , /assets/graph@2x.1ee5366a.png 2x">
-          <h4 class="h4 text-text-black absolute top-[22%]">เก็บข้อมูลตลอดเวลา</h4>
-        </div>
-        <div class="sm:min-w-1/3 min-w-36 shrink-0  h-40 sm:h-80 relative flex justify-center flex-grow lg:flex-grow-0">
-          <img src="/assets/half_mobile_screen.284195c6.png" class="h-full w-auto mx-auto" alt=""
-            srcset="/assets/half_mobile_screen.284195c6.png , /assets/half_mobile_screen@2x.3c22cf04.png 2x">
-          <img src="/assets/uptrend.34eefc55.png" class="absolute bottom-[12.5%] h-[40%]" alt="graph"
-            srcset="/assets/uptrend.34eefc55.png , /assets/uptrend@2x.d7dab20f.png 2x">
-          <h4 class="h4 text-text-black absolute top-[22%]">เก็บข้อมูลอย่างปลอดภัย
-          </h4>
-        </div>
-        <div class="sm:min-w-1/3 min-w-36 shrink-0  h-40 sm:h-80 relative flex justify-center flex-grow lg:flex-grow-0">
-          <img src="/assets/half_mobile_screen.284195c6.png" class="h-full w-auto mx-auto" alt=""
-            srcset="/assets/half_mobile_screen.284195c6.png , /assets/half_mobile_screen@2x.3c22cf04.png 2x">
-          <img src="/assets/polar_pie_chart.e0308c4a.png" class="absolute bottom-[12.5%] h-[45%]" alt="graph"
-            srcset="/assets/polar_pie_chart.e0308c4a.png , /assets/polar_pie_chart@2x.4c90d76d.png 2x">
-          <h4 class="h4 text-text-black absolute top-[22%]">เก็บข้อมูลและนำมาวิเคราะห์
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section bg-section-light-gray xl:mb-12 mb-4 overflow-clip">
-    <div class="polary-container relative">
-      <img src="/assets/snowflake.7d3498c5.svg" alt="" class="absolute -top-10 hidden xl:block">
-      <img src="/assets/snowflake.7d3498c5.svg" alt="" class="absolute -bottom-8 left-28 hidden xl:block">
-      <img src="/assets/snowflake.7d3498c5.svg" alt="" class="absolute bottom-1/2 left-1/3 hidden xl:block">
-      <img src="/assets/snowflake.7d3498c5.svg" alt="" class="absolute -bottom-12 right-40 hidden xl:block">
-      <img src="/assets/snowflake.7d3498c5.svg" alt="" class="absolute -top-6 -right-6 hidden xl:block">
-      <div class="feature flex xl:pb-20 pb-10 justify-center items-center relative">
-        <div class="sm:pt-5 sm:w-1/3 xl:mb-0 w-full mb-6">
-          <h2 class="h2 mb-7 md:mb-5 text-text-black">มากกว่า 15 ฟีเจอร์บน Polary</h2>
-          <p class="h5 text-dark-gray mb-5 w-1/2 md:mb-9 sm:w-auto">Polary มีมากกว่า 15 ฟีเจอร์สำคัญเพื่อให้การบริหารจัดการคลีนิคเป็นเรื่องที่ง่ายดาย
+        <svg
+          class="absolute -left-1/3 -top-1/3 z-0 aspect-square w-1/2"
+          width="570"
+          height="570"
+          viewBox="0 0 570 570"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle opacity="0.500046" cx="285" cy="285" r="285" fill="#11C1C4" />
+        </svg>
+        <div class="container-padding relative md:w-2/3 xl:w-1/2">
+          <h1 class="h1 text-white">
+            ระบบบริหารจัดการคลีนิค<br />ที่ครบครันและสะดวกสบาย
+          </h1>
+          <p
+            class="h4 mt-5 mb-5 w-1/2 text-white text-opacity-[0.85] xl:mt-4 xl:mb-8"
+          >
+            Polary คือระบบบริหารจัดการคลีนิคแบบครบวงจรที่ครอบคลุมทุกการใช้งาน
+            เพือให้คลีนิคสามารถบริหารและส่งมอบบริการได้อย่างมีประสิทธิภาพโดยไม่กังวลถึงระบบการทำงานด้านหลัง
           </p>
-          <a href="" class="button round filled primary">ดูฟีเจอร์ทั้งหมด</a>
+          <a
+            href="https://clinic.polary.app/register"
+            class="button round filled white"
+            >ทดลองใช้ฟรี</a
+          >
+          <a href="#statistic">
+            <img
+              src="/assets/down_icon.dfb3b14c.svg"
+              alt=""
+              class="mt-14 mb-3 h-10 w-10 animate-bounce xl:mt-24 xl:mb-5"
+            />
+            <span class="primary-text inline-block text-white text-opacity-60"
+              >เลื่อนลงเพื่อดูรายละเอียด</span
+            >
+          </a>
         </div>
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_mo4thkbv.json" class="w-52 absolute right-0 top-16 sm:static sm:w-72 xl:w-96 -my-[15%]"
-          background="transparent" speed="1" loop autoplay></lottie-player>
-      </div>
-    </div>
-  </div>
-  <div class="section bg-gradient-to-r from-gradient-light-green to-gradient-dark-green">
-    <div class="polary-container relative">
-      <div class="feature pb-20 lg:h-[500px] flex flex-col justify-between">
-        <div>
-          <div class="header">
-            <h4 class="h4 text-white text-opacity-60">ภาพตัวอย่างโปรแกรม</h4>
-          </div>
-          <div class="w-12 h-px bg-white opacity-60 mt-7"></div>
-        </div>
-        <div class="glide relative -mt-24">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="flex flex-col lg:flex-row">
-                  <div class="screenshot-detail flex-1">
-                    <h2 class="h2 screenshot-title">Polary หน้าสมาชิก</h2>
-                    <p class="h5 screenshot-description">แสดงข้อมูลสมาชิก และเป็นจุดเชื่อมต่อไปยังฟีเจอร์อื่นๆของ Polary
-                      ทั้งหมด
-                    </p>
-                  </div>
-                  <div class="screenshot">
-                    <img src="/assets/member_screenshot.c38ce711.png" alt="" class="">
-                  </div>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="flex flex-col lg:flex-row">
-                  <div class="screenshot-detail flex-1">
-                    <h2 class="h2 screenshot-title">Polary หน้าสมาชิก</h2>
-                    <p class="h5 screenshot-description">แสดงข้อมูลสมาชิก และเป็นจุดเชื่อมต่อไปยังฟีเจอร์อื่นๆของ Polary
-                      ทั้งหมด
-                    </p>
-                  </div>
-                  <div class="screenshot">
-                    <img src="/assets/member_screenshot.c38ce711.png" alt="" class="">
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="glide__bullets absolute lg:bottom-0 mt-4 lg:mt-0" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-          </div>
-        </div>
-      </div>
-      <img src="/assets/Mascot l Polary_1-5-03.13ea8fd7.svg" alt="" class="h-64 absolute right-[480px] -bottom-12 xl:-bottom-14 xl:right-[500px] hidden lg:block">
-    </div>
-  </div>
-  <div class="section overflow-clip" id="price">
-    <div class="polary-container relative">
-      <div class="feature pb-20 flex">
-        <img src="/assets/Mascot l Polary_1-5-02.10e571c8.svg" alt="" class="h-52 z-20 absolute top-0 -right-6 sm:static lg:h-96 -scale-x-[1] lg:ml-0 lg:-mr-[120px] sm:z-10 sm:-ml-10 sm:-mr-16">
-        <div class="rounded-[14px] card flex-1 bg-white z-10 relative mt-16 sm:mt-0 price">
-          <div class="flex flex-col space-y-5 md:flex-row md:space-y-0 justify-between content padding border-b border-[#F1F1F1]">
-            <div class="md:mt-2">
-              <div class="flex items-baseline md:mb-5">
-                <h1 class="h1 text-text-black mr-2">899</h1>
-                <h4 class="h4 text-unit-gray">บาท/เดือน</h4>  
-              </div>
-              <h3 class="h3 text-text-black">ราคาเดียวครบทุกฟีเจอร์</h3>
-            </div>
-            <div class="flex flex-row md:flex-col space-x-4 md:space-y-5 md:space-x-0">
-              <a href="" class="button filled round primary min-w-[112px]">สมัครเลย</a>
-              <a href="" class="button filled white round bordered">ทดลองใช้งานฟรี</a>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 xl:grid-cols-3 content padding gap-y-4 gap-x-2 secondary-text text-dark-gray">
-            <span>บันทึกข้อมูลคนไข้</span>
-            <span>รายชื่อบุคคลากร</span>
-            <span>รายงานยอดขายและการบริการ</span>
-            <span>บันทึกประวัติการรักษา</span>
-            <span>Point of Sale (POS)</span>
-            <span>รายงานการรักษา</span>
-            <span>ตารางนัดหมาย</span>
-            <span>รายงานคนไข้และการใช้บริการ</span>
-            <span>สรุปรายงานในแบบเอกสาร</span>
-            <span>รายการสินค้าและบริการ</span>
-            <span>รายงานบุคคลากร</span>
-            <span>เชื่อมต่อ API</span>
-          </div>
-          <img src="/assets/snowflake_green.242142dd.svg" alt="" class="snowflake-green xl:h-20 xl:w-20 absolute h-12 w-20 -bottom-6 -right-10 xl:-bottom-10 xl:-right-10">
-        </div>
-      </div>
-      <div class="w-80 h-80 rounded-full bg-[#1BD1D51A] absolute -bottom-40 -right-40 blur-[100px]"></div>
-      <div class="w-80 h-80 rounded-full bg-[#1BD1D51A] absolute -top-16 -left-52 blur-[100px]"></div>
-    </div>
-  </div>
-  <div class="section bg-section-light-gray overflow-clip" id="contact">
-    <div class="polary-container flex flex-col lg:flex-row lg:h-[640px]">
-      <div class="relative">
-        <a href="https://www.google.com/maps/dir//Zarewoft" target="_blank">
-          <img class="blur-[1px] brightness-[0.85] h-[315px] sm:h-[488px] lg:h-full w-full object-cover" loading="lazy" src="https://maps.googleapis.com/maps/api/staticmap?center=Tawana+Bangkok&zoom=14&size=617x640&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x006bff%7Clabel:Z%7Czarewoft&key=AIzaSyAUoVvWeZf9uj1ZT-IHYPq_88t-XtS7BXo&signature=EXYCyVt1qbW_w8NjLCqqMEBMw9s=" alt="Google Map of Zarewoft">
-        </a>
-        <div class="absolute bottom-1/3 sm:bottom-1/2 sm:w-2/3 xl:bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/3 sm:translate-y-1/2 xl:translate-y-1/3 w-4/5">
-          <div class="rounded-xl card bubble primary-text bg-white grid grid-cols-[48px_auto] md:grid-cols-[80px_auto]  gap-y-5 xl:p-8 p-5 xl:pr-28 pr-16 w-full relative mb-3">
-            <span class="text-dark-gray">ที่อยู่</span>
-            <span class="text-[#7D848A]"><a href="https://www.google.com/maps/dir//Zarewoft" target="_blank">101/30-33 อาคารสาธรนคร ทาวเวอร์ชั้นที่ 20 ห้องเลขที่ 438 ถนนสาทรเหนือสีลม เขตบางรัก กรุงเทพฯ 10400</a></span>
-            <span class="text-dark-gray">อีเมล์</span>
-            <span class="text-[#7D848A]">contact@zarewoft.com</span>
-            <img class="absolute xl:top-6 xl:right-6 top-4 right-4 xl:w-7 w-5" src="/assets/snowflake_green.242142dd.svg" alt="">
-          </div>
-          <img class="mx-auto" src="/assets/polar_map_marker.aceb9ea1.png" alt="" srcset="/assets/polar_map_marker.aceb9ea1.png , /assets/polar_map_marker@2x.a6ea43ba.png 2x">
-        </div>
-      </div>
-      <div class="sm:py-14 sm:px-28 px-3 py-8 flex-1">
-        <h3 class="h3 mb-9">ติดต่อเราได้ทุกเมื่อ</h3>
-        <div class="space-y-3 mb-6">
-          <div class="label">ชื่อ</div>
-          <input type="text" name="" id=""
-            class="input">
-        </div>
-        <div class="space-y-3 mb-6">
-          <div class="label">อีเมล์ติดต่อกลับ</div>
-          <input type="email" name="" id=""
-            class="input">
-        </div>
-        <div class="space-y-3 mb-8">
-          <div class="label">ข้อความ</div>
-          <textarea name="" id="" cols="30" rows="5"
-            class="input"></textarea>
-        </div>
-        <button class="filled button round primary min-w-[111px]">ส่งข้อความ</button>
-      </div>
-    </div>
-  </div>
-  <footer class="bg-[#303030]">
-    <div class="polary-container container-padding flex flex-col md:flex-row md:justify-between md:h-20 h-24 items-center justify-center">
-      <img src="/assets/polary_snowflake_logo.f9cd5f8f.svg" alt="Polary logo with green snowflake" class="h-6 md:h-8 xl:h-9 mb-3 md:mb-0">
-      <div class="text-[0.6rem] xl:text-sm text-white font-medium">Copyright © 2022 Zarewoft Co.,Ltd. All rights reserved.</div>
-    </div>
-  </footer>
-</body>
 
+        <lottie-player
+          src="https://assets7.lottiefiles.com/packages/lf20_3bctaz0q.json"
+          mode="bounce"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          class="absolute -right-20 -bottom-40 w-3/4 md:h-full md:w-2/3 xl:w-1/2"
+        >
+        </lottie-player>
+      </div>
+    </div>
+    <div class="overflow-clip py-10 xl:py-[105px]" id="statistic">
+      <div class="polary-container relative">
+        <div
+          class="relative flex flex-col space-y-7 px-3 xl:flex-row xl:space-x-7 xl:space-y-0"
+        >
+          <div
+            class="flex flex-col sm:flex-row sm:space-x-7 sm:overflow-x-auto sm:p-6 xl:overflow-x-visible xl:p-0"
+          >
+            <div class="group flex-shrink-0">
+              <div class="relative flex h-24 justify-center">
+                <img
+                  src="/assets/Mascot l Polary.c936ba19.svg"
+                  class="absolute top-7 w-40 transition-all group-hover:top-0"
+                />
+              </div>
+              <div class="card relative z-10 rounded-xl bg-white px-8 py-5">
+                <div
+                  class="relative float-right inline-flex h-4 w-4 rounded-full bg-[#70FF00]"
+                >
+                  <span
+                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#70FF00] opacity-75"
+                  ></span>
+                </div>
+                <h1 class="h1 my-6 md:my-10">2,800+</h1>
+                <h3 class="h3 mb-2 text-primary">
+                  จำนวนคนไข้และลูกค้าที่ดูแลทั้งหมดในระบบ
+                </h3>
+                <p class="primary-text text-card-gray">
+                  ปัจจุบัน Polary ได้รองรับคนไข้และลูกค้าสูงถึง 2,800 คน
+                </p>
+              </div>
+            </div>
+            <div class="group flex-shrink-0">
+              <div class="relative flex h-24 justify-center">
+                <img
+                  src="/assets/Mascot l Polary.c936ba19.svg"
+                  class="absolute top-7 w-40 transition-all group-hover:top-0"
+                />
+              </div>
+              <div class="card relative z-10 rounded-xl bg-white px-8 py-5">
+                <div
+                  class="relative float-right inline-flex h-4 w-4 rounded-full bg-[#70FF00]"
+                >
+                  <span
+                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#70FF00] opacity-75"
+                  ></span>
+                </div>
+                <h1 class="h1 my-6 md:my-10">32+</h1>
+                <h3 class="h3 mb-2 text-primary">
+                  จำนวนคลีนิคที่ใช้บริการ Polary
+                </h3>
+                <p class="primary-text text-card-gray">
+                  ปัจจุบันบริการ Polary ได้รองรับคลีนิกจำนวน 32 แห่ง
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-10 h-[260px] w-[210px] self-end overflow-clip">
+            <lottie-player
+              src="https://assets9.lottiefiles.com/packages/lf20_wplhmbxf.json"
+              background="transparent"
+              speed="1"
+              class="absolute -left-5 h-[260px] w-[260px] bg-white xl:bg-transparent"
+              loop
+              autoplay
+            >
+            </lottie-player>
+          </div>
+          <div
+            class="absolute bottom-[19px] left-0 h-[4px] w-full bg-black xl:left-1/3 xl:w-[500px]"
+          ></div>
+          <svg
+            class="absolute bottom-[18px] right-8 hidden xl:block"
+            width=" 118"
+            height="6"
+            viewBox="0 0 118 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 3H115"
+              stroke="url(#paint0_linear_164_728)"
+              stroke-width="4.2"
+              stroke-linecap="square"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_164_728"
+                x1="9"
+                y1="3"
+                x2="117"
+                y2="3"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop />
+                <stop offset="1" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div
+          class="absolute -bottom-3/4 right-10 h-80 w-80 rounded-full bg-[#1BD1D51A] blur-[100px]"
+        ></div>
+      </div>
+    </div>
+    <div class="section mb-4 bg-section-gray xl:mb-12" id="feature">
+      <div class="polary-container overflow-clip">
+        <div class="feature split vertical">
+          <div class="detail left">
+            <h2
+              class="h2 mb-4 w-3/5 text-text-black sm:w-2/5 xl:mb-9 xl:w-auto"
+            >
+              ข้อมูลคนไข้และลูกค้าถูกเก็บอย่างปลอดภัย
+            </h2>
+            <p class="h5 w-4/5 text-dark-gray xl:w-auto">
+              ข้อมูลรายละเอียดลูกค้าและคนไข้ทั้งหมด อาทิ ประวัติส่วนบุคคล
+              ประวัติการรักษา ประวัติการจ่ายยา ถูกเก็บอย่างปลอดภัยบน ระบบ
+              ออนไลน์ของ Polary
+              โดยที่คลีนิคสามารถเรียกดูและจัดการข้อมูลทั้งหมดนี้ได้ทุกที่ทุกเวลา
+            </p>
+          </div>
+          <div
+            class="xl:max-h-auto relative aspect-video w-full sm:mt-6 md:max-h-[456px] xl:mt-0 xl:h-auto xl:w-auto"
+          >
+            <img
+              src="/assets/Screenshot1.75b243a4.png"
+              alt=""
+              srcset=""
+              class="absolute -right-12 bottom-0 max-h-full xl:static"
+            />
+            <img
+              class="absolute top-1/2 left-6 h-2/3 -translate-y-1/2 lg:left-auto lg:right-1/3 xl:-left-20"
+              srcset="/assets/member-card.4215073a.png , /assets/member-card@2x.1258ae9e.png 2x"
+              src="/assets/member-card@2x.1258ae9e.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mb-4 bg-section-gray xl:mb-12">
+      <div class="polary-container overflow-clip">
+        <div class="feature flex flex-col xl:flex-row">
+          <div
+            class="xl:max-h-auto relative mb-6 aspect-video w-full md:max-h-[456px] xl:mb-0 xl:h-auto xl:w-auto"
+          >
+            <img
+              src="/assets/Screenshot2.6e6b36b0.png"
+              alt=""
+              srcset=""
+              class="absolute -left-8 max-h-full xl:static xl:right-16 xl:top-0"
+            />
+            <img
+              class="absolute top-2/3 left-[40%] h-1/6 -translate-y-1/4 xl:top-[72%] xl:left-1/2 xl:h-16 xl:-translate-y-1/2"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAY8AAABfCAYAAAAQ00t8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIvSURBVHgB7dg9bhNBGMfhmTFEiMolkpu0qRKfgOQmvoGv4ivkJCQn2CCFmm0iUaaAgoh42OVDokCx//3zSLszeucAP83U8sdyGJZvX73Z1t4vy/wBwG93pbTdw/nZ9d9BnX/vhuF00U4+TNvTAgD/Nz7vn66+rNfjr3isPn76XIQDgMPGb/un9WI13G9KrZsCAIctX9f6vZVWtwUAjlTr4n2b1osCAMfq/bIVAAiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDExAOAmHgAEBMPAGLiAUBMPACIiQcAMfEAICYeAMTEA4CYeAAQEw8AYuIBQEw8AIiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDExAOAmHgAEBMPAGLiAUBMPACIiQcAMfEAICYeAMTEA4CYeAAQEw8AYuIBQEw8AIiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDExAOAmHgAEBMPAGLiAUBMPACIiQcAMfEAICYeAMTEA4CYeAAQEw8AYuIBQEw8AIiJBwAx8QAgJh4AxMQDgJh4ABATDwBi4gFATDwAiIkHADHxACAmHgDEWun1pgDAkXopd63359sCAEeqpe3aSfmxmyoyFgA4YO7Fw/nZdRvX68f9vl0JCAAvmTsx92Le138PVsP9ZppsS60XBQBmvd/U3m+/Ti9Vj9OFYx79BAVyR6iPwqycAAAAAElFTkSuQmCC"
+              alt=""
+            />
+            <img
+              class="absolute top-1/3 left-1/3 h-1/6 -translate-y-1/2 xl:h-16"
+              src="/assets/appointment_card2.a4df273a.png"
+              alt=""
+            />
+            <img
+              class="absolute top-2/3 left-[28%] h-1/6 -translate-y-1/2 xl:left-1/3 xl:h-16"
+              src="/assets/appointment_card.a6c35da1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="right mb-6 w-full self-end sm:w-4/5 sm:pb-12 xl:mb-0 xl:w-1/3 xl:pt-5"
+          >
+            <h2 class="h2 mb-4 w-3/5 text-text-black xl:mb-9 xl:w-auto">
+              บริหารจัดการเวลาโดยละเอียด อย่างง่ายดาย
+            </h2>
+            <p class="h5 pr-8 text-dark-gray xl:pr-0">
+              Polary
+              รองรับการบริหารจัดการเวลาและตารางเพื่อให้คลีนิคของคุณสามารถปฏิบัติงานได้อย่างมีประสิทธิภาพสูงสุด
+              การจัดการตารางเวลารองรับในรูปแบบที่ง่ายดาย เช่น ปฏิทิน ตารางรายวัน
+              ตารางรายเดือน อีกทั้งสามารถรองรับรูปแบบตาราง เวลาของแต่บุคคล
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mb-4 bg-section-gray xl:mb-12">
+      <div class="polary-container">
+        <div class="feature split horizontal">
+          <div class="detail text-center">
+            <h2 class="h2 mb-4 text-text-black xl:mb-9">
+              วิเคราะห์ข้อมูลและนำเสนอรายงาน
+            </h2>
+            <p class="h5 text-dark-gray">
+              ข้อมูลทั้งหมดสามารถวิเคราะห์และนำเสนอในรูปแบบรายงานหรือแผนภูมิ
+            </p>
+          </div>
+        </div>
+        <div class="mt-6 flex overflow-x-auto lg:justify-center">
+          <div
+            class="sm:min-w-1/3 min-w-36 relative flex h-40 shrink-0 flex-grow justify-center sm:h-80 lg:flex-grow-0"
+          >
+            <img
+              src="/assets/half_mobile_screen.284195c6.png"
+              class="mx-auto h-full w-auto"
+              alt=""
+              srcset="/assets/half_mobile_screen.284195c6.png , /assets/half_mobile_screen@2x.3c22cf04.png 2x"
+            />
+            <img
+              src="/assets/graph.79706ce2.png"
+              class="absolute bottom-[12.5%] h-[45%]"
+              alt="graph"
+              srcset="/assets/graph.79706ce2.png , /assets/graph@2x.1ee5366a.png 2x"
+            />
+            <h4 class="h4 absolute top-[22%] text-text-black">
+              เก็บข้อมูลตลอดเวลา
+            </h4>
+          </div>
+          <div
+            class="sm:min-w-1/3 min-w-36 relative flex h-40 shrink-0 flex-grow justify-center sm:h-80 lg:flex-grow-0"
+          >
+            <img
+              src="/assets/half_mobile_screen.284195c6.png"
+              class="mx-auto h-full w-auto"
+              alt=""
+              srcset="/assets/half_mobile_screen.284195c6.png , /assets/half_mobile_screen@2x.3c22cf04.png 2x"
+            />
+            <img
+              src="/assets/uptrend.34eefc55.png"
+              class="absolute bottom-[12.5%] h-[40%]"
+              alt="graph"
+              srcset="/assets/uptrend.34eefc55.png , /assets/uptrend@2x.d7dab20f.png 2x"
+            />
+            <h4 class="h4 absolute top-[22%] text-text-black">
+              เก็บข้อมูลอย่างปลอดภัย
+            </h4>
+          </div>
+          <div
+            class="sm:min-w-1/3 min-w-36 relative flex h-40 shrink-0 flex-grow justify-center sm:h-80 lg:flex-grow-0"
+          >
+            <img
+              src="/assets/half_mobile_screen.284195c6.png"
+              class="mx-auto h-full w-auto"
+              alt=""
+              srcset="/assets/half_mobile_screen.284195c6.png , /assets/half_mobile_screen@2x.3c22cf04.png 2x"
+            />
+            <img
+              src="/assets/polar_pie_chart.e0308c4a.png"
+              class="absolute bottom-[12.5%] h-[45%]"
+              alt="graph"
+              srcset="/assets/polar_pie_chart.e0308c4a.png , /assets/polar_pie_chart@2x.4c90d76d.png 2x"
+            />
+            <h4 class="h4 absolute top-[22%] text-text-black">
+              เก็บข้อมูลและนำมาวิเคราะห์
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mb-4 overflow-clip bg-section-light-gray xl:mb-12">
+      <div class="polary-container relative">
+        <img
+          src="/assets/snowflake.7d3498c5.svg"
+          alt=""
+          class="absolute -top-10 hidden xl:block"
+        />
+        <img
+          src="/assets/snowflake.7d3498c5.svg"
+          alt=""
+          class="absolute -bottom-8 left-28 hidden xl:block"
+        />
+        <img
+          src="/assets/snowflake.7d3498c5.svg"
+          alt=""
+          class="absolute bottom-1/2 left-1/3 hidden xl:block"
+        />
+        <img
+          src="/assets/snowflake.7d3498c5.svg"
+          alt=""
+          class="absolute -bottom-12 right-40 hidden xl:block"
+        />
+        <img
+          src="/assets/snowflake.7d3498c5.svg"
+          alt=""
+          class="absolute -top-6 -right-6 hidden xl:block"
+        />
+        <div
+          class="feature relative flex items-center justify-center pb-10 xl:pb-20"
+        >
+          <div class="mb-6 w-full sm:w-1/3 sm:pt-5 xl:mb-0">
+            <h2 class="h2 mb-7 text-text-black md:mb-5">
+              มากกว่า 15 ฟีเจอร์บน Polary
+            </h2>
+            <p class="h5 mb-5 w-1/2 text-dark-gray sm:w-auto md:mb-9">
+              Polary มีมากกว่า 15
+              ฟีเจอร์สำคัญเพื่อให้การบริหารจัดการคลีนิคเป็นเรื่องที่ง่ายดาย
+            </p>
+            <button id="all-feature-button" class="button round filled primary">
+              ดูฟีเจอร์ทั้งหมด
+            </button>
+          </div>
+          <lottie-player
+            src="https://assets9.lottiefiles.com/packages/lf20_mo4thkbv.json"
+            class="absolute right-0 top-16 -my-[15%] w-52 sm:static sm:w-72 xl:w-96"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section bg-gradient-to-r from-gradient-light-green to-gradient-dark-green"
+    >
+      <div class="polary-container relative">
+        <div class="feature flex flex-col justify-between pb-20 lg:h-[500px]">
+          <div>
+            <div class="header">
+              <h4 class="h4 text-white text-opacity-60">ภาพตัวอย่างโปรแกรม</h4>
+            </div>
+            <div class="mt-7 h-px w-12 bg-white opacity-60"></div>
+          </div>
+          <div class="glide relative -mt-24">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="flex flex-col lg:flex-row">
+                    <div class="screenshot-detail flex-1">
+                      <h2 class="h2 screenshot-title">Polary หน้าสมาชิก</h2>
+                      <p class="h5 screenshot-description">
+                        แสดงข้อมูลสมาชิก และเป็นจุดเชื่อมต่อไปยังฟีเจอร์อื่นๆของ
+                        Polary ทั้งหมด
+                      </p>
+                    </div>
+                    <div class="screenshot">
+                      <img
+                        src="/assets/member_screenshot.c38ce711.png"
+                        alt=""
+                        class=""
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="flex flex-col lg:flex-row">
+                    <div class="screenshot-detail flex-1">
+                      <h2 class="h2 screenshot-title">Polary หน้าสมาชิก</h2>
+                      <p class="h5 screenshot-description">
+                        แสดงข้อมูลสมาชิก และเป็นจุดเชื่อมต่อไปยังฟีเจอร์อื่นๆของ
+                        Polary ทั้งหมด
+                      </p>
+                    </div>
+                    <div class="screenshot">
+                      <img
+                        src="/assets/member_screenshot.c38ce711.png"
+                        alt=""
+                        class=""
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="glide__bullets absolute mt-4 lg:bottom-0 lg:mt-0"
+              data-glide-el="controls[nav]"
+            >
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/assets/Mascot l Polary_1-5-03.13ea8fd7.svg"
+          alt=""
+          class="absolute right-[480px] -bottom-12 hidden h-64 lg:block xl:-bottom-14 xl:right-[500px]"
+        />
+      </div>
+    </div>
+    <div class="section overflow-clip" id="price">
+      <div class="polary-container relative">
+        <div class="feature flex pb-20">
+          <img
+            src="/assets/Mascot l Polary_1-5-02.10e571c8.svg"
+            alt=""
+            class="absolute top-0 -right-6 z-20 h-52 -scale-x-[1] sm:static sm:z-10 sm:-ml-10 sm:-mr-16 lg:ml-0 lg:-mr-[120px] lg:h-96"
+          />
+          <div
+            class="card price relative z-10 mt-16 flex-1 rounded-[14px] bg-white sm:mt-0"
+          >
+            <div
+              class="content padding flex flex-col justify-between space-y-5 border-b border-[#F1F1F1] md:flex-row md:space-y-0"
+            >
+              <div class="md:mt-2">
+                <div class="flex items-baseline md:mb-5">
+                  <h1 class="h1 mr-2 text-text-black">899</h1>
+                  <h4 class="h4 text-unit-gray">บาท/เดือน</h4>
+                </div>
+                <h3 class="h3 text-text-black">ราคาเดียวครบทุกฟีเจอร์</h3>
+              </div>
+              <div
+                class="flex flex-row space-x-4 md:flex-col md:space-y-5 md:space-x-0"
+              >
+                <a
+                  href="https://clinic.polary.app/register"
+                  class="button filled round primary min-w-[112px]"
+                  >สมัครเลย</a
+                >
+                <a
+                  href="https://clinic.polary.app/register"
+                  class="button filled white round bordered"
+                  >ทดลองใช้งานฟรี</a
+                >
+              </div>
+            </div>
+            <div
+              class="content padding secondary-text grid grid-cols-2 gap-y-4 gap-x-2 text-dark-gray xl:grid-cols-3"
+            >
+              <span>บันทึกข้อมูลคนไข้</span>
+              <span>รายชื่อบุคคลากร</span>
+              <span>รายงานยอดขายและการบริการ</span>
+              <span>บันทึกประวัติการรักษา</span>
+              <span>Point of Sale (POS)</span>
+              <span>รายงานการรักษา</span>
+              <span>ตารางนัดหมาย</span>
+              <span>รายงานคนไข้และการใช้บริการ</span>
+              <span>สรุปรายงานในแบบเอกสาร</span>
+              <span>รายการสินค้าและบริการ</span>
+              <span>รายงานบุคคลากร</span>
+              <span>เชื่อมต่อ API</span>
+            </div>
+            <img
+              src="/assets/snowflake_green.242142dd.svg"
+              alt=""
+              class="snowflake-green absolute -bottom-6 -right-10 h-12 w-20 xl:-bottom-10 xl:-right-10 xl:h-20 xl:w-20"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-[#1BD1D51A] blur-[100px]"
+        ></div>
+        <div
+          class="absolute -top-16 -left-52 h-80 w-80 rounded-full bg-[#1BD1D51A] blur-[100px]"
+        ></div>
+      </div>
+    </div>
+    <div class="section overflow-clip bg-section-light-gray" id="contact">
+      <div class="polary-container flex flex-col lg:h-[640px] lg:flex-row">
+        <div class="relative">
+          <a href="https://www.google.com/maps/dir//Zarewoft" target="_blank">
+            <img
+              class="h-[315px] w-full object-cover blur-[1px] brightness-[0.85] sm:h-[488px] lg:h-full"
+              loading="lazy"
+              src="https://maps.googleapis.com/maps/api/staticmap?center=Tawana+Bangkok&zoom=14&size=617x640&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x006bff%7Clabel:Z%7Czarewoft&key=AIzaSyAUoVvWeZf9uj1ZT-IHYPq_88t-XtS7BXo&signature=EXYCyVt1qbW_w8NjLCqqMEBMw9s="
+              alt="Google Map of Zarewoft"
+            />
+          </a>
+          <div
+            class="absolute bottom-1/3 left-1/2 w-4/5 -translate-x-1/2 translate-y-1/3 sm:bottom-1/2 sm:w-2/3 sm:translate-y-1/2 xl:bottom-1/2 xl:translate-y-1/3"
+          >
+            <div
+              class="card bubble primary-text relative mb-3 grid w-full grid-cols-[48px_auto] gap-y-5 rounded-xl bg-white p-5 pr-16 md:grid-cols-[80px_auto] xl:p-8 xl:pr-28"
+            >
+              <span class="text-dark-gray">ที่อยู่</span>
+              <span class="text-[#7D848A]"
+                ><a
+                  href="https://www.google.com/maps/dir//Zarewoft"
+                  target="_blank"
+                  >101/30-33 อาคารสาธรนคร ทาวเวอร์ชั้นที่ 20 ห้องเลขที่ 438
+                  ถนนสาทรเหนือสีลม เขตบางรัก กรุงเทพฯ 10400</a
+                ></span
+              >
+              <span class="text-dark-gray">อีเมล์</span>
+              <span class="text-[#7D848A]">contact@zarewoft.com</span>
+              <img
+                class="absolute top-4 right-4 w-5 xl:top-6 xl:right-6 xl:w-7"
+                src="/assets/snowflake_green.242142dd.svg"
+                alt=""
+              />
+            </div>
+            <img
+              class="mx-auto"
+              src="/assets/polar_map_marker.aceb9ea1.png"
+              alt=""
+              srcset="/assets/polar_map_marker.aceb9ea1.png , /assets/polar_map_marker@2x.a6ea43ba.png 2x"
+            />
+          </div>
+        </div>
+        <div class="flex-1 px-3 py-8 sm:py-14 sm:px-28">
+          <h3 class="h3 mb-9">ติดต่อเราได้ทุกเมื่อ</h3>
+          <div class="mb-6 space-y-3">
+            <div class="label">ชื่อ</div>
+            <input type="text" name="" id="" class="input" />
+          </div>
+          <div class="mb-6 space-y-3">
+            <div class="label">อีเมล์ติดต่อกลับ</div>
+            <input type="email" name="" id="" class="input" />
+          </div>
+          <div class="mb-8 space-y-3">
+            <div class="label">ข้อความ</div>
+            <textarea name="" id="" cols="30" rows="5" class="input"></textarea>
+          </div>
+          <button class="filled button round primary min-w-[111px]">
+            ส่งข้อความ
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[#303030]">
+      <div
+        class="polary-container container-padding flex h-24 flex-col items-center justify-center md:h-20 md:flex-row md:justify-between"
+      >
+        <img
+          src="/assets/polary_snowflake_logo.f9cd5f8f.svg"
+          alt="Polary logo with green snowflake"
+          class="mb-3 h-6 md:mb-0 md:h-8 xl:h-9"
+        />
+        <div class="text-[0.6rem] font-medium text-white xl:text-sm">
+          Copyright © 2022 Zarewoft Co.,Ltd. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <dialog id="all-feature-dialog">
+      <div
+        class="flex max-h-[90vh] flex-col overflow-y-auto rounded-xl bg-white"
+      >
+        <div
+          class="sticky top-0 flex items-center justify-between bg-white px-5 py-3 sm:py-11 sm:px-8 xl:py-9 xl:px-10"
+        >
+          <div class="h-5 w-5"></div>
+          <h2 class="h2 self-center">ฟีเจอร์ทั้งหมด</h2>
+          <form method="dialog" class="h-5 w-5 sm:h-8 sm:w-8">
+            <button type="submit" value="Close">
+              <img src="/assets/x_icon.36e3b281.svg" alt="" />
+            </button>
+          </form>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-4 px-6 pb-4 pt-1 sm:grid-cols-3 sm:px-9 sm:pt-1 sm:pb-12 xl:grid-cols-4 xl:px-28 xl:pb-16 xl:pt-2"
+        >
+          <div class="all-feature-item">
+            <img
+              src="/assets/description_black_24dp.18c5a668.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">บันทึกข้อมูลคนไข้</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/medication_black_24dp.c956b275.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">บันทึกประวัติการรักษา</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/event_black_24dp.2598f220.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">ตารางนัดหมาย</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/inventory_2_black_24dp.5a6fefdd.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">รายการสินค้าและบริการ</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/assignment_ind_black_24dp.57e05eb3.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">รายชื่อบุคคลากร</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/point_of_sale_black_24dp.18aaca0c.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">Point of Sale (POS)</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/note_add_black_24dp.3612b1fa.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label"
+              >รายงานคนไข้ และการใช้บริการ</span
+            >
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/contact_page_black_24dp.68c079e5.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">รายงานบุคคลากร</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/text_snippet_black_24dp.b62d2c56.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label"
+              >รายงานคนไข้ และการใช้บริการ</span
+            >
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/medical_services_black_24dp.421e787c.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">รายงานบุคคลากร</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/data_usage_black_24dp.a945a7b7.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">สรุปรายงานในแบบเอกสาร</span>
+          </div>
+          <div class="all-feature-item">
+            <img
+              src="/assets/extension_black_24dp.56aebb9e.svg"
+              alt=""
+              class="all-feature-item-icon"
+            />
+            <span class="all-feature-item-label">เชื่อมต่อ API</span>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
 </html>
